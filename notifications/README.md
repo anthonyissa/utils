@@ -2,6 +2,16 @@
 
 This package contains code for sending messages to either a Telegram chat or a Discord channel using Node.js.
 
+[Installation](#installation)
+
+[Usage](#usage)
+  - [Telegram Notification](#sending-a-telegram-notification)
+  - [Discord Notification](#sending-a-discord-notification)
+
+[Contributing](#contributing)
+
+[License](#license)
+
 ## Installation
 
 `
