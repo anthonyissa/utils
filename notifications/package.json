@@ -1,6 +1,6 @@
 {
   "name": "@aitox/notifications",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Package to send notifications using multiple apps.",
   "main": "index.js",
   "private": false,
@@ -20,6 +20,7 @@
     "jest": "^29.5.0"
   },
   "dependencies": {
+    "discord.js": "^14.8.0",
     "dotenv": "^16.0.3",
     "node-fetch": "^2.6.9"
   }
