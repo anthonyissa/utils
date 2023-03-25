@@ -1,0 +1,18 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "Multiple NPM packages that I created to be used on projects to avoid code duplication.",
+  "main": "index.js",
+  "workspaces": [
+    "notifications/"
+  ],
+  "scripts": {
+    "test": "turbo run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "turbo": "latest"
+  }
+}
