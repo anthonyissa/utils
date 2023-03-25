@@ -1,0 +1,26 @@
+{
+  "name": "@aitox/notifications",
+  "version": "1.0.7",
+  "description": "Package to send notifications using multiple apps.",
+  "main": "index.js",
+  "private": false,
+  "scripts": {
+    "publish": "npm publish --access public",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonyissa/utils.git"
+  },
+  "keywords": [],
+  "author": "Anthony ISSA",
+  "license": "ISC",
+  "homepage": "https://github.com/anthonyissa/utils/notifications/#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-fetch": "^2.6.9"
+  }
+}
