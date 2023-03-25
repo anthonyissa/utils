@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anthonyissa/utils.git"
+    "url": "https://github.com/anthonyissa/utils/tree/main/notifications"
   },
   "keywords": [],
   "author": "Anthony ISSA",
   "license": "ISC",
-  "homepage": "https://github.com/anthonyissa/utils/notifications/#readme",
+  "homepage": "https://github.com/anthonyissa/utils/tree/main/notifications",
   "devDependencies": {
     "jest": "^29.5.0"
   },
