@@ -1,0 +1,22 @@
+name: Run Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16.x"
+      - name: Install packages
+        run: npm install
+      - name: Run Tests
+        run: npm run test
