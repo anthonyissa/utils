@@ -25,13 +25,13 @@ To use this code, you will need to have a bot created on either Telegram or Disc
 ### Sending a Telegram Notification
 
 ```Javascript
-const { sendTelegramNotification } = require("@aitox/notifications");
+const notifications = require("@aitox/notifications");
 
 const token = "YOUR_TELEGRAM_BOT_TOKEN";
 const chatId = "YOUR_TELEGRAM_CHAT_ID";
 const message = "Your message goes here";
 
-sendTelegramNotification(token, chatId, message)
+notifications.sendTelegramNotification(token, chatId, message)
   .then((response) => {
     console.log(response.status);
   })
@@ -44,14 +44,14 @@ sendTelegramNotification(token, chatId, message)
 
 ```Javascript
 
-const { sendDiscordNotification } = require("./discord");
+const notifications = require("@aitox/notifications");
 const { MessageEmbed } = require("discord.js");
 
 const token = "YOUR_DISCORD_BOT_TOKEN";
 const channelId = "YOUR_DISCORD_CHANNEL_ID";
 const message = "Your message goes here";
 
-sendDiscordNotification(token, channelId, message)
+notifications.sendDiscordNotification(token, channelId, message)
   .then((messageSent) => {
     console.log(messageSent.content);
   })
@@ -65,7 +65,7 @@ const embed = new MessageEmbed()
   .setDescription("My Description")
   .setColor("#0099ff");
 
-sendDiscordNotification(token, channelId, embed)
+notifications.sendDiscordNotification(token, channelId, embed)
   .then((messageSent) => {
     console.log(messageSent.content);
   })
