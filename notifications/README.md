@@ -45,7 +45,7 @@ notifications.sendTelegramNotification(token, chatId, message)
 ```Javascript
 
 const notifications = require("@aitox/notifications");
-const { MessageEmbed } = require("discord.js");
+const { EmbedBuilder } = require('discord.js');
 
 const token = "YOUR_DISCORD_BOT_TOKEN";
 const channelId = "YOUR_DISCORD_CHANNEL_ID";
@@ -59,8 +59,8 @@ notifications.sendDiscordNotification(token, channelId, message)
     console.error(error);
   });
 
-// To send an embedded message, create an instance of the MessageEmbed class and pass it as the message parameter:
-const embed = new MessageEmbed()
+// To send an embedded message, create an instance of the EmbedBuilder class and pass it as the message parameter:
+const embed = new EmbedBuilder()
   .setTitle("My Title")
   .setDescription("My Description")
   .setColor("#0099ff");
