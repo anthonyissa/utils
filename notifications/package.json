@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": false,
   "scripts": {
-    "publish": "npm publish --access public",
+    "publish:public": "npm publish --access public",
     "test": "jest"
   },
   "repository": {

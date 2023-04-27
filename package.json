@@ -4,7 +4,8 @@
   "description": "Multiple NPM packages that I created to be used on projects to avoid code duplication.",
   "main": "index.js",
   "workspaces": [
-    "notifications/"
+    "notifications/",
+    "supabase/"
   ],
   "scripts": {
     "test": "turbo run test"
