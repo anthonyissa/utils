@@ -1,6 +1,6 @@
 {
   "name": "@aitox/aws-monitoring",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package is a wrapper around the AWS SDK to manage AWS.",
   "main": "index.js",
   "private": false,

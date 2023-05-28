@@ -7,8 +7,9 @@ require("dotenv").config();
  * If the cost threshold is reached, the app will exit.
  * @param {number} priceThreshold
  * @param {boolean} exitOnThresholdReached
+ * @param {number} interval
  */
-const watchAWSCost = (priceThreshold, exitOnThresholdReached = false) => {
+const watchAWSCost = (priceThreshold, exitOnThresholdReached = false, interval = 1000 * 60 * 60 * 24) => {
   const { AWS_ACCESS_KEY, AWS_SECRET_ACCESS_KEY } = process.env;
   if (!AWS_ACCESS_KEY || !AWS_SECRET_ACCESS_KEY)
     throw new Error(
@@ -55,7 +56,7 @@ const watchAWSCost = (priceThreshold, exitOnThresholdReached = false) => {
         }
       }
     });
-  }, 3000);
+  }, interval);
 };
 
 module.exports = watchAWSCost;

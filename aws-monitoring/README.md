@@ -21,10 +21,13 @@ npm i @aitox/aws-monitoring
 I would recommend putting the call for the cost watcher at the beginning of the main file of your app. 
 
 Will print in the console when the 10$ threshold is reached.
-watchAWSCost(10, false);
+watchAWSCost(10);
 
 Will exit when the 10$ threshold is reached.
 watchAWSCost(10, true);
+
+Will exit when the 10$ threshold is reached. The watcher will be launched every 6 hours.
+watchAWSCost(10, true, 1000 * 60 * 60 * 6);
 
 ## Contributing
 
