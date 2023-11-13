@@ -9,7 +9,11 @@ require("dotenv").config();
  * @param {boolean} exitOnThresholdReached
  * @param {number} interval
  */
-const watchAWSCost = (priceThreshold, exitOnThresholdReached = false, interval = 1000 * 60 * 60 * 24) => {
+const watchAWSCost = (
+  priceThreshold,
+  exitOnThresholdReached = false,
+  interval = 1000 * 60 * 60 * 24
+) => {
   const { AWS_ACCESS_KEY, AWS_SECRET_ACCESS_KEY } = process.env;
   if (!AWS_ACCESS_KEY || !AWS_SECRET_ACCESS_KEY)
     throw new Error(
