@@ -1,6 +1,6 @@
 {
   "name": "@aitox/openai",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple wrapper for OpenAI API",
   "main": "index.js",
   "private": false,
